@@ -15,10 +15,10 @@ export const portfolioConfig = {
 
   // Social Links - Update with your actual profiles
   social: {
-    github: 'https://github.com/yourusername',
-    linkedin: 'https://linkedin.com/in/yourusername',
+    github: 'https://github.com/yosiefdagnachew',
+    linkedin: 'https://linkedin.com/in/yosief-dagnachew-53b5a0322',
     twitter: 'https://twitter.com/yourusername',
-    email: 'mailto:yosief@example.com',
+    email: 'mailto:jossysiyolas@gmail.com',
   },
 
   // Resume/CV
@@ -35,7 +35,7 @@ export const portfolioConfig = {
   // SEO
   seo: {
     title: 'Yosief Dagnachew - Full Stack Web Developer Portfolio',
-    description: 'Portfolio of Yosief Dagnachew, a Full Stack Web Developer and Software Engineer from Debre Markos University',
+    description: 'Portfolio of Yosief Dagnachew, a Full Stack Web Developer and Software Engineer from Addis Ababa, Ethiopia',
     keywords: 'portfolio, software engineer, web developer, full stack, react, node.js',
   },
 }
