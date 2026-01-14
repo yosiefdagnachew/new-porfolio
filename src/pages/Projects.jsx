@@ -103,7 +103,7 @@ export default function Projects() {
     technologies: ['React', 'TailwindCSS', 'Vite', 'JavaScript'],
     image: '🌐',
     github: 'https://github.com/yosiefdagnachew/PORTFOLIO-YOSIEF',
-    live: '',
+    live: 'https://yosiefdagnachew.github.io/PORTFOLIO-YOSIEF',
     featured: true
   },
   {
