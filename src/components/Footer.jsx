@@ -5,10 +5,10 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { icon: FiGithub, url: 'https://github.com', label: 'GitHub' },
-    { icon: FiLinkedin, url: 'https://linkedin.com', label: 'LinkedIn' },
+    { icon: FiGithub, url: 'https://www.github.com/yosiefdagnachew', label: 'GitHub' },
+    { icon: FiLinkedin, url: 'https://www.linkedin.com/in/yosief-dagnachew-53b5a0322', label: 'LinkedIn' },
     { icon: FiTwitter, url: 'https://twitter.com', label: 'Twitter' },
-    { icon: FiMail, url: 'mailto:your.email@example.com', label: 'Email' },
+    { icon: FiMail, url: 'mailto:jossysiyolas@gmail.com', label: 'Email' },
   ]
 
   return (
@@ -19,7 +19,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4 gradient-text">Yosief Dagnachew</h3>
             <p className="text-gray-400 text-sm">
-              Full Stack Web Developer & Software Engineer from Debre Markos University
+              Full Stack Web Developer & Software Engineer from Addis Ababa Ethiopia
             </p>
           </div>
 

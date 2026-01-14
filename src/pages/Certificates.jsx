@@ -3,72 +3,122 @@ import SectionTitle from '../components/SectionTitle'
 import Card from '../components/Card'
 import Button from '../components/Button'
 import { FiDownload, FiExternalLink } from 'react-icons/fi'
+import {
+  SiNodedotjs,
+  SiExpress,
+  SiSpringboot,
+  SiGoogle,
+  SiIbm,
+  SiHtml5,
+  SiPython,
+  SiMysql,
+  SiGit,
+  SiJavascript,
+} from 'react-icons/si'
+import { FiServer } from 'react-icons/fi'
 
 export default function Certificates() {
   const certificates = [
     {
       id: 1,
-      title: 'Full Stack Web Development',
-      issuer: 'Udemy',
-      date: 'March 2024',
-      description: 'Comprehensive course covering React, Node.js, MongoDB, and modern web development practices.',
-      credentialUrl: 'https://example.com',
-      icon: '🎓'
+      title: 'Developing Backend Applications with Node.js and Express',
+      issuer: 'IBM (Coursera)',
+      date: '2024',
+      description:
+        'Backend development using Node.js and Express, focusing on REST APIs, middleware, and server-side architecture.',
+      credentialUrl: 'https://coursera.org/verify/WV3JCXS568LX',
+      icon: SiNodedotjs,
     },
-    {
+      {
       id: 2,
-      title: 'JavaScript Mastery',
-      issuer: 'Codecademy',
-      date: 'January 2024',
-      description: 'Advanced JavaScript concepts including ES6+, async programming, and design patterns.',
-      credentialUrl: 'https://example.com',
-      icon: '📜'
+      title: 'Python Core',
+      issuer: 'SoloLearn',
+      date: '2023',
+      description:
+        'Built a solid foundation in Python programming, including data structures, control flow, functions, modular design, and problem-solving techniques.',
+      credentialUrl: 'https://www.sololearn.com/certificates/CC-YBKS9MK8',
+      icon: SiPython,
     },
-    {
+     {
       id: 3,
-      title: 'React Advanced Patterns',
-      issuer: 'Frontend Masters',
-      date: 'December 2023',
-      description: 'Deep dive into React hooks, context API, performance optimization, and testing.',
-      credentialUrl: 'https://example.com',
-      icon: '⚛️'
+      title: 'Spring Boot 3 Essential',
+      issuer: 'IBM (LinkedIn Learning)',
+      date: '2024',
+      description:
+        'Spring Boot fundamentals including configuration, RESTful services, and backend application development.',
+      credentialUrl: '',
+      icon: SiSpringboot,
     },
     {
       id: 4,
-      title: 'Database Design & SQL',
-      issuer: 'Coursera',
-      date: 'November 2023',
-      description: 'Relational database design, SQL optimization, and data modeling best practices.',
-      credentialUrl: 'https://example.com',
-      icon: '🗄️'
+      title: 'Technical Support Fundamentals',
+      issuer: 'Google (Coursera)',
+      date: '2024',
+      description:
+        'Core IT support skills including operating systems, troubleshooting, networking basics, and customer support.',
+      credentialUrl: 'https://coursera.org/verify/ROOUJX68XZ47',
+      icon: SiGoogle,
     },
-    {
+        {
       id: 5,
-      title: 'Web Performance Optimization',
-      issuer: 'Pluralsight',
-      date: 'October 2023',
-      description: 'Techniques for optimizing web applications, reducing load times, and improving UX.',
-      credentialUrl: 'https://example.com',
-      icon: '⚡'
+      title: 'SQL',
+      issuer: 'SoloLearn',
+      date: '2023',
+      description:
+        'Developed a strong understanding of relational database concepts, complex queries, joins, constraints, normalization, and efficient data manipulation using SQL',
+      credentialUrl: 'https://www.sololearn.com/certificates/CC-L0VFVOEA',
+      icon: SiMysql,
     },
     {
       id: 6,
+      title: 'Bits and Bytes of Computer Networking',
+      issuer: 'Google (Coursera)',
+      date: '2024',
+      description:
+        'Comprehensive networking concepts including TCP/IP, DNS, DHCP, routing, and network fundamentals.',
+      credentialUrl: 'https://coursera.org/verify/7L2LIOD0CNH2',
+      icon: FiServer,
+    },
+        {
+      id: 7,
+      title: 'Information Technology Fundamentals',
+      issuer: 'IBM SkillsBuild',
+      date: '2025',
+      description:
+        'Comprehensive understanding of IT fundamentals including hardware, software, networking, cybersecurity basics, and enterprise IT concepts.',
+      credentialUrl: ' https://www.credly.com/badges/e2c26384-28c2-4084-8c75-14499a91679e',
+      icon: SiIbm,
+    },
+    { 
+      id: 8,
+      title: 'HTML',
+      issuer: 'SoloLearn',
+      date: '2021',
+      description:
+        'Mastered semantic HTML, accessibility best practices, structured document design, and standards-compliant markup for modern web applications.',
+      credentialUrl: 'https://www.sololearn.com/certificates/CT-WCGSFP8M',
+      icon: SiHtml5,
+    },
+  
+
+    {
+      id: 9,
       title: 'Git & Version Control',
       issuer: 'LinkedIn Learning',
-      date: 'September 2023',
-      description: 'Git fundamentals, branching strategies, collaboration workflows, and best practices.',
-      credentialUrl: 'https://example.com',
-      icon: '🔀'
+      date: '2023',
+      description:
+        'Git fundamentals, branching strategies, collaboration workflows, and version control best practices.',
+      credentialUrl: '',
+      icon: SiGit,
     },
+   
   ]
 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-      },
+      transition: { staggerChildren: 0.1 },
     },
   }
 
@@ -86,7 +136,7 @@ export default function Certificates() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle
           title="Certificates & Achievements"
-          subtitle="Professional certifications and courses I've completed to enhance my skills"
+          subtitle="Professional certifications demonstrating continuous learning and technical expertise"
         />
 
         {/* Certificates Grid */}
@@ -96,27 +146,40 @@ export default function Certificates() {
           whileInView="visible"
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          {certificates.map(cert => (
-            <motion.div key={cert.id} variants={itemVariants}>
-              <Card className="h-full flex flex-col">
-                <div className="text-5xl mb-4">{cert.icon}</div>
-                <h3 className="text-xl font-bold mb-2">{cert.title}</h3>
-                <p className="text-accent text-sm font-semibold mb-2">{cert.issuer}</p>
-                <p className="text-gray-400 text-sm mb-4">{cert.date}</p>
-                <p className="text-gray-400 mb-6 flex-grow">{cert.description}</p>
+          {certificates.map(cert => {
+            const Icon = cert.icon
+            return (
+              <motion.div key={cert.id} variants={itemVariants}>
+                <Card className="h-full flex flex-col">
+                  <div className="flex items-center justify-center h-14 w-14 rounded-lg bg-accent/20 mb-4">
+                    <Icon size={28} className="text-accent" />
+                  </div>
 
-                <a
-                  href={cert.credentialUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button size="sm" className="w-full">
-                    <FiExternalLink /> View Credential
-                  </Button>
-                </a>
-              </Card>
-            </motion.div>
-          ))}
+                  <h3 className="text-xl font-bold mb-2">{cert.title}</h3>
+                  <p className="text-accent text-sm font-semibold mb-1">
+                    {cert.issuer}
+                  </p>
+                  <p className="text-gray-400 text-sm mb-4">{cert.date}</p>
+
+                  <p className="text-gray-400 mb-6 flex-grow">
+                    {cert.description}
+                  </p>
+
+                  {cert.credentialUrl && (
+                    <a
+                      href={cert.credentialUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button size="sm" className="w-full">
+                        <FiExternalLink /> View Credential
+                      </Button>
+                    </a>
+                  )}
+                </Card>
+              </motion.div>
+            )
+          })}
         </motion.div>
 
         {/* Additional Achievements */}
@@ -126,29 +189,38 @@ export default function Certificates() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-16 glass rounded-2xl p-8"
         >
-          <h3 className="text-2xl font-bold mb-6 gradient-text">Other Achievements</h3>
+          <h3 className="text-2xl font-bold mb-6 gradient-text">
+            Other Achievements
+          </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {
-                title: 'Dean\'s List',
-                description: 'Recognized for academic excellence with GPA 3.83'
+                title: "Dean's List",
+                description: 'Recognized for academic excellence with a GPA of 3.83',
               },
               {
-                title: 'Open Source Contributor',
-                description: 'Active contributor to various open-source projects'
+                title: 'Enterprise IT Experience',
+                description:
+                  'Hands-on experience supporting enterprise systems in the banking sector.',
               },
               {
-                title: 'Hackathon Participant',
-                description: 'Participated in multiple hackathons and coding competitions'
+                title: 'Project-Based Learning',
+                description:
+                  'Developed multiple academic and personal projects using modern technologies.',
               },
               {
-                title: 'Technical Blogger',
-                description: 'Share knowledge through technical articles and tutorials'
+                title: 'Continuous Learner',
+                description:
+                  'Actively improving skills through online courses and self-learning.',
               },
             ].map((achievement, idx) => (
               <div key={idx} className="p-4 bg-secondary/50 rounded-lg">
-                <h4 className="font-bold mb-2 text-accent">{achievement.title}</h4>
-                <p className="text-gray-400 text-sm">{achievement.description}</p>
+                <h4 className="font-bold mb-2 text-accent">
+                  {achievement.title}
+                </h4>
+                <p className="text-gray-400 text-sm">
+                  {achievement.description}
+                </p>
               </div>
             ))}
           </div>
@@ -161,7 +233,9 @@ export default function Certificates() {
           transition={{ duration: 0.5, delay: 0.5 }}
           className="mt-16 text-center"
         >
-          <p className="text-gray-400 mb-6">Want to see all my credentials and achievements?</p>
+          <p className="text-gray-400 mb-6">
+            Want to see my full professional background?
+          </p>
           <a href="/resume.pdf" download>
             <Button size="lg">
               <FiDownload /> Download My Resume
@@ -172,4 +246,3 @@ export default function Certificates() {
     </div>
   )
 }
-

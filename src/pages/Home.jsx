@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { FiArrowRight, FiCode, FiLayout, FiDatabase } from 'react-icons/fi'
+import { FiArrowRight, FiCode, FiLayout, FiDatabase, FiServer, FiShield, FiSettings} from 'react-icons/fi'
 import Button from '../components/Button'
 import Card from '../components/Card'
 
@@ -21,6 +21,21 @@ export default function Home() {
       title: 'Database Design',
       description: 'Designing scalable and efficient database solutions'
     },
+    {
+    icon: FiServer,
+    title: 'Backend & API Development',
+    description: 'Building reliable backend systems and RESTful APIs.'
+  },
+  {
+    icon: FiShield,
+    title: 'System & Security Support',
+    description: 'Supporting enterprise systems with strong focus on security, performance, and reliability.'
+  },
+  {
+    icon: FiSettings,
+    title: 'System Administration',
+    description: 'Managing servers, networks, and IT infrastructure in enterprise environments.'
+  },
   ]
 
   const containerVariants = {
@@ -76,14 +91,14 @@ export default function Home() {
             variants={itemVariants}
             className="text-xl md:text-2xl text-gray-400 mb-8 max-w-2xl mx-auto"
           >
-            Full Stack Web Developer & Software Engineer from Debre Markos University
+            Full Stack Web Developer & Software Engineer from Addis Ababa Ethiopia
           </motion.p>
 
           <motion.p
             variants={itemVariants}
             className="text-lg text-gray-500 mb-12 max-w-2xl mx-auto"
           >
-            GPA: 3.83 | Passionate about building interactive, modern web applications
+            BSC in Software Engineering | Passionate about building interactive, modern web applications
           </motion.p>
 
           <motion.div

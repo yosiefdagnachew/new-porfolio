@@ -9,79 +9,125 @@ export default function Projects() {
   const [activeFilter, setActiveFilter] = useState('all')
 
   const projects = [
-    {
-      id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce platform with product catalog, shopping cart, and payment integration.',
-      category: 'fullstack',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      image: '🛍️',
-      github: 'https://github.com',
-      live: 'https://example.com',
-      featured: true
-    },
-    {
-      id: 2,
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates and team features.',
-      category: 'frontend',
-      technologies: ['React', 'Firebase', 'Tailwind CSS'],
-      image: '✓',
-      github: 'https://github.com',
-      live: 'https://example.com',
-      featured: true
-    },
-    {
-      id: 3,
-      title: 'Weather Dashboard',
-      description: 'A weather application that displays real-time weather data with beautiful visualizations.',
-      category: 'frontend',
-      technologies: ['React', 'API Integration', 'Chart.js'],
-      image: '🌤️',
-      github: 'https://github.com',
-      live: 'https://example.com',
-      featured: false
-    },
-    {
-      id: 4,
-      title: 'Blog API',
-      description: 'RESTful API for a blogging platform with authentication and content management.',
-      category: 'backend',
-      technologies: ['Node.js', 'Express', 'PostgreSQL', 'JWT'],
-      image: '📝',
-      github: 'https://github.com',
-      live: 'https://example.com',
-      featured: false
-    },
-    {
-      id: 5,
-      title: 'Social Media Dashboard',
-      description: 'Dashboard for managing multiple social media accounts with analytics and scheduling.',
-      category: 'fullstack',
-      technologies: ['React', 'Node.js', 'MySQL', 'Chart.js'],
-      image: '📊',
-      github: 'https://github.com',
-      live: 'https://example.com',
-      featured: true
-    },
-    {
-      id: 6,
-      title: 'Chat Application',
-      description: 'Real-time chat application with user authentication and message history.',
-      category: 'fullstack',
-      technologies: ['React', 'Socket.io', 'Node.js', 'MongoDB'],
-      image: '💬',
-      github: 'https://github.com',
-      live: 'https://example.com',
-      featured: false
-    },
-  ]
+  {
+    id: 1,
+    title: 'Project Management Web App',
+    description:
+      'A comprehensive web application built for managing tasks, teams, and communication using a modern full-stack architecture.',
+    category: 'fullstack',
+    technologies: ['React', 'Node.js', 'Express','Web Socket','JWT', 'Passport.Js', 'MongoDB'],
+    image: '📋',
+    github: 'https://github.com/yosiefdagnachew/project-management',
+    live: '',
+    featured: true
+  },
+ {
+    id: 2,
+    title: 'Fixed Asset Management System',
+    description:
+      'A system for tracking fixed assets, maintenance schedules, and inventory using modern development practices.',
+    category: 'fullstack',
+    technologies: ['Next js','React','TypeScript','TailwindCSS','PostgreSQL','PrismaORM','NextAuth.js','Zod'],
+    image: '🏗️',
+    github: 'https://github.com/yosiefdagnachew/Fixed-asset-management-system',
+    live: '',
+    featured: false
+  },
+
+  {
+  id: 3,
+  title: 'Task Scheduler System',
+  description:
+    'A comprehensive and auditable task scheduling system designed to fairly assign operational tasks with configurable rules, audit trails, and an interactive web interface.',
+  category: 'fullstack',
+  technologies: ['React','FastAPI','Python','PostgreSQL','REST API','TailwindCSS'],
+  image: '⏱️',
+  github: 'https://github.com/yosiefdagnachew/task-scheduler',
+  live: '',
+  featured: true
+},
+{
+    id: 4,
+    title: 'Student Attendance Management',
+    description:
+      'A student attendance system project implemented in C#/CSS/HTML/JavaScript, serving as an educational CMS prototype.',
+    category: 'fullstack',
+    technologies: ['C#','ASP.NET MVC','Entity Framework','HTML', 'CSS', 'JavaScript','F#','SQL Server' ],
+    image: '🧑‍🎓',
+    github: 'https://github.com/yosiefdagnachew/Student-Attendance-Management',
+    live: '',
+    featured: false
+  },
+  {
+  id: 5,
+  title: 'Sorting Visualizer (Java GUI)',
+  description:
+    'A Java-based graphical application that visually demonstrates how different sorting algorithms work step by step, providing an interactive and educational learning experience.',
+  category: 'algorithm-and-data-structure',
+  technologies: ['Java', 'Java Swing','Bubble Sort','Selection Sort','Insertion Sort','Merge Sort','Quick Sort','Heap Sort'],
+  image: '📊',
+  github: 'https://github.com/yosiefdagnachew/sorting-visualizer',
+  live: '',
+  featured: false
+},
+  {
+    id: 6,
+    title: 'Library Management System',
+    description:
+      'A PHP-based library management system with user authentication, book tracking, and member management features.',
+    category: 'fullstack',
+    technologies: ['PHP', 'MySQL', 'CSS', 'JavaScript','HTML'],
+    image: '📚',
+    github: 'https://github.com/yosiefdagnachew/Library_management_system',
+    live: '',
+    featured: false
+  },
+  {
+    id: 7,
+    title: 'Market Price Prediction',
+    description:
+      'A machine learning project using Python to predict market prices through data preprocessing, modeling, and visualization.',
+    category: 'data-science',
+    technologies: ['Python', 'numpy', 'pandas', 'matplotlib', 'seaborn', 'Scikit-Learn', 'Jupyter Notebook',],
+    image: '📈',
+    github: 'https://github.com/yosiefdagnachew/Python-final-project',
+    live: '',
+    featured: true
+  },
+  {
+    id: 8,
+    title: 'Personal Portfolio Website',
+    description:
+      'Source code for a personal portfolio website showcasing skills, education, and projects built with HTML, CSS, and JavaScript.',
+    category: 'frontend',
+    technologies: ['React', 'TailwindCSS', 'Vite', 'JavaScript'],
+    image: '🌐',
+    github: 'https://github.com/yosiefdagnachew/PORTFOLIO-YOSIEF',
+    live: '',
+    featured: true
+  },
+  {
+  id: 9,
+  title: 'Book Review REST API',
+  description:
+    'A scalable RESTful backend service built with Node.js and Express for managing books, user reviews, and ratings. The API supports authentication, authorization, structured CRUD operations, and clean architectural separation following backend best practices.',
+  category: 'backend',
+  technologies: ['Node.js','Express.js','MongoDB','Mongoose','JWT','REST API','Postman'],
+  image: '📚',
+  github: 'https://github.com/yosiefdagnachew/expressBookReviews', 
+  live: '',
+  featured: false
+}
+
+]
 
   const categories = [
     { id: 'all', label: 'All Projects' },
     { id: 'frontend', label: 'Frontend' },
     { id: 'backend', label: 'Backend' },
     { id: 'fullstack', label: 'Full Stack' },
+    { id: 'data-science', label: 'Data Science' },
+    { id: 'algorithm-and-data-structure', label: 'Algorithm & Data Structure' },
   ]
 
   const filteredProjects = activeFilter === 'all'
@@ -141,11 +187,11 @@ export default function Projects() {
         <motion.div
           variants={containerVariants}
           initial="hidden"
-          whileInView="visible"
+          animate="visible"
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {filteredProjects.map(project => (
-            <motion.div key={project.id} variants={itemVariants}>
+            <motion.div key={project.id} variants={itemVariants} initial="hidden" animate="visible">
               <Card className="h-full flex flex-col">
                 <div className="text-6xl mb-4">{project.image}</div>
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>

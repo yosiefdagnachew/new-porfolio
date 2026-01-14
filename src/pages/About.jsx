@@ -10,32 +10,56 @@ export default function About() {
       degree: 'Bachelor of Science in Software Engineering',
       year: '2024',
       gpa: '3.83',
-      details: 'Graduated with honors, focusing on full-stack web development and software architecture'
-    }
+      details:
+        'Strong academic foundation in software engineering, full-stack web development, databases, and system design.',
+    },
+    {
+      school: 'G.Y.M Institute of Technology',
+      degree: 'Certificate in Computer and Office Equipment',
+      year: '2023',
+      gpa: '90%',
+      details:
+        'Hands-on training in computer hardware, troubleshooting, and office equipment maintenance.',
+    },
+    {
+      school: 'G.Y.M Institute of Technology',
+      degree: 'Certificate in Mobile Phone Repairing and Servicing',
+      year: '2023',
+      gpa: '90%',
+      details:
+        'Practical experience in mobile phone diagnostics, repair, and servicing.',
+    },
   ]
 
   const experience = [
     {
-      title: 'Full Stack Web Developer',
-      company: 'Self-Employed',
-      period: '2023 - Present',
-      description: 'Building modern web applications using React, Node.js, and various databases'
+      title: 'IT Officer',
+      company: 'Zemen Bank S.C',
+      period: 'June 2024 – Present',
+      description:
+        'Working in the IT Department supporting enterprise systems, system administration, network operations, and security tools including Sophos, Nessus, and CyberArk. Gained hands-on experience with core banking systems and RTGS operations.',
     },
     {
-      title: 'Junior Developer',
-      company: 'Various Projects',
-      period: '2022 - 2023',
-      description: 'Contributed to multiple projects, learning and implementing best practices'
-    }
+      title: 'Software Developer',
+      company: 'Amhara Science and Technology Commission',
+      period: 'Sep 2023 – Jul 2023',
+      description:
+        'Developed and maintained web applications using ASP.NET, Java, and MERN stack technologies. Contributed to both frontend and backend development while following software engineering best practices.',
+    },
+    {
+      title: 'Full Stack Web Developer',
+      company: 'Self-Employed',
+      period: '2022 – 2023',
+      description:
+        'Contributed to multiple projects, learning and implementing best practices',
+    },
   ]
 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
+      transition: { staggerChildren: 0.2 },
     },
   }
 
@@ -54,7 +78,7 @@ export default function About() {
         {/* Header */}
         <SectionTitle
           title="About Me"
-          subtitle="Learn more about my background, education, and professional journey"
+          subtitle="My background, education, and professional experience"
         />
 
         {/* Main About Section */}
@@ -67,55 +91,61 @@ export default function About() {
           <div>
             <h3 className="text-2xl font-bold mb-6">Who I Am</h3>
             <p className="text-gray-400 mb-4 leading-relaxed">
-              I'm Yosief Dagnachew, a passionate software engineer and full-stack web developer from Debre Markos University. With a strong academic background (GPA: 3.83) and a deep interest in creating interactive and modern web applications, I'm committed to delivering high-quality solutions.
+              I’m Yosief Dagnachew, a Software Engineer and Full Stack Web Developer
+              from Addis Ababa, Ethiopia. I hold a BSc in Software Engineering with
+              a CGPA of 3.83 and have professional experience in both software
+              development and enterprise IT environments.
             </p>
             <p className="text-gray-400 mb-4 leading-relaxed">
-              My journey in software development has been driven by a desire to solve real-world problems through technology. I specialize in building scalable, user-friendly applications that combine beautiful design with robust functionality.
+              I enjoy building secure, scalable, and user-focused applications.
+              My background combines strong academic knowledge with hands-on
+              experience in real-world systems.
             </p>
             <p className="text-gray-400 leading-relaxed">
-              When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and continuously learning to stay updated with industry trends.
+              I am highly motivated, detail-oriented, and continuously learning
+              new technologies to improve my skills and deliver better solutions.
             </p>
           </div>
 
           <div className="space-y-4">
             <Card>
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-accent/20">
-                    <FiAward className="text-accent" size={24} />
-                  </div>
+                <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-accent/20">
+                  <FiAward className="text-accent" size={24} />
                 </div>
                 <div>
                   <h4 className="text-lg font-bold">Academic Excellence</h4>
-                  <p className="text-gray-400 text-sm">GPA: 3.83 - Graduated with honors</p>
+                  <p className="text-gray-400 text-sm">
+                    BSc in Software Engineering (GPA: 3.83)
+                  </p>
                 </div>
               </div>
             </Card>
 
             <Card>
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-accent/20">
-                    <FiBriefcase className="text-accent" size={24} />
-                  </div>
+                <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-accent/20">
+                  <FiBriefcase className="text-accent" size={24} />
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold">Full Stack Developer</h4>
-                  <p className="text-gray-400 text-sm">Frontend, Backend, and Database expertise</p>
+                  <h4 className="text-lg font-bold">Industry Experience</h4>
+                  <p className="text-gray-400 text-sm">
+                    Banking systems, enterprise IT, and software development
+                  </p>
                 </div>
               </div>
             </Card>
 
             <Card>
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-accent/20">
-                    <FiBookOpen className="text-accent" size={24} />
-                  </div>
+                <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-accent/20">
+                  <FiBookOpen className="text-accent" size={24} />
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold">Continuous Learner</h4>
-                  <p className="text-gray-400 text-sm">Always exploring new technologies</p>
+                  <h4 className="text-lg font-bold">Continuous Learning</h4>
+                  <p className="text-gray-400 text-sm">
+                    Always improving skills with modern technologies
+                  </p>
                 </div>
               </div>
             </Card>
@@ -142,7 +172,9 @@ export default function About() {
                     <span className="text-gray-400 text-sm">{edu.year}</span>
                   </div>
                   <p className="text-gray-400 mb-2">{edu.details}</p>
-                  <p className="text-sm text-accent font-semibold">GPA: {edu.gpa}</p>
+                  <p className="text-sm text-accent font-semibold">
+                    GPA / Result: {edu.gpa}
+                  </p>
                 </Card>
               </motion.div>
             ))}
@@ -178,4 +210,3 @@ export default function About() {
     </div>
   )
 }
-

@@ -37,28 +37,28 @@ export default function Contact() {
     {
       icon: FiMail,
       label: 'Email',
-      value: 'yosief@example.com',
-      link: 'mailto:yosief@example.com'
+      value: 'jossysiyolas@gmail.com',
+      link: 'mailto:jossysiyolas@gmail.com'
     },
     {
       icon: FiPhone,
       label: 'Phone',
-      value: '+251 9XX XXX XXXX',
-      link: 'tel:+251'
+      value: '+251 960 94 5350',
+      link: 'tel:+251 960 94 5350'
     },
     {
       icon: FiMapPin,
       label: 'Location',
-      value: 'Debre Markos, Ethiopia',
-      link: '#'
+      value: 'Addis Ababa, Ethiopia',
+      link: 'https://maps.app.goo.gl/1GeDgT2eGRz3j5Hh6'
     },
   ]
 
   const socialLinks = [
-    { icon: FiGithub, url: 'https://github.com', label: 'GitHub' },
-    { icon: FiLinkedin, url: 'https://linkedin.com', label: 'LinkedIn' },
+    { icon: FiGithub, url: 'https://www.github.com/yosiefdagnachew', label: 'GitHub' },
+    { icon: FiLinkedin, url: 'https://www.linkedin.com/in/yosief-dagnachew-53b5a0322', label: 'LinkedIn' },
     { icon: FiTwitter, url: 'https://twitter.com', label: 'Twitter' },
-    { icon: FiMail, url: 'mailto:yosief@example.com', label: 'Email' },
+    { icon: FiMail, url: 'mailto:jossysiyolas@gmail.com', label: 'Email' },
   ]
 
   const containerVariants = {
@@ -227,10 +227,10 @@ export default function Contact() {
             Whether you have a project idea, want to collaborate, or just want to chat about web development, I'd love to hear from you!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="mailto:yosief@example.com">
+            <a href="mailto:jossysiyolas@gmail.com">
               <Button size="lg">Send Email</Button>
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/yosief-dagnachew-53b5a0322" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" size="lg">Connect on LinkedIn</Button>
             </a>
           </div>
