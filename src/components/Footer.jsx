@@ -8,7 +8,7 @@ export default function Footer() {
   const socialLinks = [
     { icon: FiGithub, url: 'https://www.github.com/yosiefdagnachew', label: 'GitHub' },
     { icon: FiLinkedin, url: 'https://www.linkedin.com/in/yosief-dagnachew-lkdn', label: 'LinkedIn' },
-    { icon: SiUpwork, url: 'https://www.upwork.com/freelancers/~019917a3e40f1bca80', label: 'Upwork' }
+    { icon: SiUpwork, url: 'https://www.upwork.com/freelancers/~019917a3e40f1bca80', label: 'Upwork' },
     { icon: FiTwitter, url: 'https://twitter.com', label: 'Twitter' },
     { icon: FiMail, url: 'mailto:jossysiyolas@gmail.com', label: 'Email' },
   ]
