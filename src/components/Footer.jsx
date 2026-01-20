@@ -6,7 +6,7 @@ export default function Footer() {
 
   const socialLinks = [
     { icon: FiGithub, url: 'https://www.github.com/yosiefdagnachew', label: 'GitHub' },
-    { icon: FiLinkedin, url: 'https://www.linkedin.com/in/yosief-dagnachew-53b5a0322', label: 'LinkedIn' },
+    { icon: FiLinkedin, url: 'https://www.linkedin.com/in/yosief-dagnachew-lkdn', label: 'LinkedIn' },
     { icon: FiTwitter, url: 'https://twitter.com', label: 'Twitter' },
     { icon: FiMail, url: 'mailto:jossysiyolas@gmail.com', label: 'Email' },
   ]
