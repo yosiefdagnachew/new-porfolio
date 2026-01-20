@@ -4,6 +4,8 @@ import SectionTitle from '../components/SectionTitle'
 import Card from '../components/Card'
 import Button from '../components/Button'
 import { FiMail, FiPhone, FiMapPin, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
+import { SiUpwork } from 'react-icons/si'
+
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -56,8 +58,9 @@ export default function Contact() {
 
   const socialLinks = [
     { icon: FiGithub, url: 'https://www.github.com/yosiefdagnachew', label: 'GitHub' },
-    { icon: FiLinkedin, url: 'https://www.linkedin.com/in/yosief-dagnachew-53b5a0322', label: 'LinkedIn' },
+    { icon: FiLinkedin, url: 'https://www.linkedin.com/in/yosief-dagnachew-lkdn', label: 'LinkedIn' },
     { icon: FiTwitter, url: 'https://twitter.com', label: 'Twitter' },
+    { icon: SiUpwork, url: 'https://www.upwork.com/freelancers/~019917a3e40f1bca80', label: 'Upwork' },
     { icon: FiMail, url: 'mailto:jossysiyolas@gmail.com', label: 'Email' },
   ]
 
