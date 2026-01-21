@@ -43,7 +43,7 @@ export default function Projects() {
   technologies: ['React','FastAPI','Python','PostgreSQL','REST API','TailwindCSS'],
   image: '⏱️',
   github: 'https://github.com/yosiefdagnachew/task-scheduler',
-  live: '',
+  live: 'https://frontend-prodn.up.railway.app',
   featured: true
 },
 {
