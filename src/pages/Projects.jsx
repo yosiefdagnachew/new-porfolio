@@ -10,18 +10,18 @@ export default function Projects() {
 
   const projects = [
   {
-    id: 3,
-    title: 'Project Management Web App',
+    id: 1,
+    title: 'Task Scheduler System',
     description:
-      'A comprehensive web application built for managing tasks, teams, and communication using a modern full-stack architecture.',
+      'A comprehensive and auditable task scheduling system designed to fairly assign operational tasks with configurable rules, audit trails, and an interactive web interface.',
     category: 'fullstack',
-    technologies: ['React', 'Node.js', 'Express','Web Socket','JWT', 'Passport.Js', 'MongoDB'],
-    image: '📋',
-    github: 'https://github.com/yosiefdagnachew/project-management',
-    live: '',
+    technologies: ['React','FastAPI','Python','PostgreSQL','REST API','TailwindCSS'],
+    image: '⏱️',
+    github: 'https://github.com/yosiefdagnachew/task-scheduler',
+    live: 'https://frontend-prodn.up.railway.app',
     featured: true
   },
- {
+  {
     id: 2,
     title: 'Fixed Asset Management System',
     description:
@@ -33,19 +33,19 @@ export default function Projects() {
     live: '',
     featured: false
   },
-
   {
-  id: 1,
-  title: 'Task Scheduler System',
-  description:
-    'A comprehensive and auditable task scheduling system designed to fairly assign operational tasks with configurable rules, audit trails, and an interactive web interface.',
-  category: 'fullstack',
-  technologies: ['React','FastAPI','Python','PostgreSQL','REST API','TailwindCSS'],
-  image: '⏱️',
-  github: 'https://github.com/yosiefdagnachew/task-scheduler',
-  live: 'https://frontend-prodn.up.railway.app',
-  featured: true
-},
+    id: 3,
+    title: 'Project Management Web App',
+    description:
+      'A comprehensive web application built for managing tasks, teams, and communication using a modern full-stack architecture.',
+    category: 'fullstack',
+    technologies: ['React', 'Node.js', 'Express','Web Socket','JWT', 'Passport.Js', 'MongoDB'],
+    image: '📋',
+    github: 'https://github.com/yosiefdagnachew/project-management',
+    live: '',
+    featured: true
+  },
+
 {
     id: 4,
     title: 'Student Attendance Management',
