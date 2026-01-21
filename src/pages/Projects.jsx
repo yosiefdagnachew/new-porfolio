@@ -10,7 +10,7 @@ export default function Projects() {
 
   const projects = [
   {
-    id: 1,
+    id: 3,
     title: 'Project Management Web App',
     description:
       'A comprehensive web application built for managing tasks, teams, and communication using a modern full-stack architecture.',
@@ -35,7 +35,7 @@ export default function Projects() {
   },
 
   {
-  id: 3,
+  id: 1,
   title: 'Task Scheduler System',
   description:
     'A comprehensive and auditable task scheduling system designed to fairly assign operational tasks with configurable rules, audit trails, and an interactive web interface.',
