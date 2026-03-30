@@ -118,7 +118,7 @@ export default function Projects() {
   live: '',
   featured: false
 },
-    {
+  {
   id: 10,
   title: 'Pharmacy ERP System',
   description:
