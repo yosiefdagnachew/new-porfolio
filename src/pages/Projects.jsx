@@ -122,7 +122,7 @@ export default function Projects() {
   id: 10,
   title: 'Pharmacy ERP System',
   description:
-    'A web-based and Desktop Based Enterprise Resource Planning (ERP) application built for pharmacy operations. It provides end-to-end management of medicine inventory, batch tracking, point-of-sale transactions, patient records, prescriptions, financial reporting, and system administration. built with Nest.js (Typescript), TypeORM, and React + TypeScript + Vite Electron Builder.',
+    'A web-based and Desktop Based ERP application built for pharmacy operations. built with Nest.js (Typescript), TypeORM, and React + TypeScript + Vite Electron Builder.',
   category: 'backend',
   technologies: ['Node.js','Nest.js','PostgreSQL','TypeORM','JWT','REST API','Railway','Electron Builder for offline version',],
   image: '📚',
